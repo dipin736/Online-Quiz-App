@@ -6,6 +6,7 @@ import QuizComponent from './Component/Quiz';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 import Navbar from './Navbar/Navbar';
+import Home from './Component/Home';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </Route>
           <Route path="/" element={<Login />} />
           <Route path="register/" element={<Register />} />
+          <Route path="home/" element={<Home />} />
         </Routes>
       </Router>
       </AuthProvider>

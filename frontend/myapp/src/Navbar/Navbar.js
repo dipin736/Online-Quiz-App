@@ -12,7 +12,9 @@ const Navbar = () => {
         <div>
             <BootstrapNavbar bg="warning" data-bs-theme="light">
                 <Container>
-                    <BootstrapNavbar.Brand >Test App</BootstrapNavbar.Brand>
+                    <BootstrapNavbar.Brand >
+                    <Nav.Link as={Link} to='/home'> Test App</Nav.Link>
+                       </BootstrapNavbar.Brand>
                     <Nav className="ms-auto">
                         {user ? (
                             <>
@@ -21,6 +23,7 @@ const Navbar = () => {
                             </>
                         ) : (
                             <>
+
                                 <Nav.Link as={Link} to='/'>Login</Nav.Link>
                                 <Nav.Link as={Link} to='/register'>Register</Nav.Link>
                             </>
